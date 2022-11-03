@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/jeremiah03.github.io/static/css/main.4733df09.css",
+    "main.js": "/jeremiah03.github.io/static/js/main.cc812ed7.js",
+    "static/media/Burtons.otf": "/jeremiah03.github.io/static/media/Burtons.c46a2405716f236c4a9a.otf",
+    "index.html": "/jeremiah03.github.io/index.html",
+    "main.4733df09.css.map": "/jeremiah03.github.io/static/css/main.4733df09.css.map",
+    "main.cc812ed7.js.map": "/jeremiah03.github.io/static/js/main.cc812ed7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4733df09.css",
+    "static/js/main.cc812ed7.js"
+  ]
+}
