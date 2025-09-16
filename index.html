@@ -2,131 +2,177 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Resume - Jeremiah Manlapaz</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Your Name - Resume</title>
         <style>
+            :root {
+                --primary: #222;
+                --secondary: #555;
+                --accent: #0066cc;
+                --bg: #fff;
+                --muted: #999;
+            }
+
             body {
-                font-family: Arial, sans-serif;
+                font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+                margin: 0;
+                background: var(--bg);
+                color: var(--primary);
                 line-height: 1.6;
-                margin: 40px auto;
-                max-width: 800px;
-                padding: 0 20px;
-                background: #fff;
-                color: #222;
             }
 
-            h1,
-            h2,
-            h3 {
-                margin-bottom: 0.2em;
-                font-weight: bold;
+            main {
+                max-width: 900px;
+                margin: 0 auto;
+                padding: 2rem;
             }
 
-            h1 {
-                font-size: 2em;
+            header {
+                margin-bottom: 2rem;
             }
 
-            h2 {
-                font-size: 1.3em;
-                border-bottom: 1px solid #ccc;
-                padding-bottom: 4px;
-                margin-top: 1.5em;
+            header h1 {
+                font-size: 2.5rem;
+                margin: 0 0 0.2rem;
             }
 
-            h3 {
-                font-size: 1.1em;
-                margin-top: 1em;
+            header p {
+                margin: 0.2rem 0;
+                color: var(--secondary);
+            }
+
+            .contact a {
+                color: var(--accent);
+                text-decoration: none;
+            }
+
+            section {
+                margin-bottom: 2rem;
+            }
+
+            section h2 {
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                margin-bottom: 1rem;
+                color: var(--secondary);
+            }
+
+            .item {
+                margin-bottom: 1.5rem;
+            }
+
+            .item h3 {
+                margin: 0;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+
+            .item .meta {
+                font-size: 0.9rem;
+                color: var(--muted);
+                margin-bottom: 0.3rem;
             }
 
             ul {
-                margin: 0;
-                padding-left: 20px;
-            }
-
-            .contact {
-                font-size: 0.9em;
-                margin-bottom: 1em;
-            }
-
-            .job,
-            .edu {
-                margin-bottom: 1.2em;
+                margin: 0.3rem 0 0 1.2rem;
+                padding: 0;
             }
 
             .skills-list {
-                columns: 2;
-                -webkit-columns: 2;
-                -moz-columns: 2;
+                display: flex;
+                flex-wrap: wrap;
+                gap: 0.5rem 1.5rem;
+                font-size: 0.95rem;
+            }
+
+            .skills-list span {
+                color: var(--primary);
+            }
+
+            /* Print friendly */
+            @media print {
+                body {
+                    background: white;
+                    color: black;
+                }
+
+                a {
+                    color: black;
+                    text-decoration: none;
+                }
             }
         </style>
     </head>
 
     <body>
-        <header>
-            <h1>Your Full Name</h1>
-            <p class="contact">
-                Email: <a href="mailto:you@example.com">you@example.com</a> |
-                Phone: +63-900-000-0000 |
-                GitHub: <a href="https://github.com/yourusername">github.com/yourusername</a> |
-                LinkedIn: <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a>
-            </p>
-        </header>
+        <main>
+            <header>
+                <h1>Your Full Name</h1>
+                <p class="contact">
+                    <a href="mailto:you@example.com">you@example.com</a> •
+                    +63-900-000-0000 •
+                    <a href="https://github.com/yourusername">github.com/yourusername</a> •
+                    <a href="https://linkedin.com/in/yourusername">linkedin.com/in/yourusername</a>
+                </p>
+            </header>
 
-        <section>
-            <h2>Professional Summary</h2>
-            <p>Software Engineer with 5+ years of experience in full-stack development, specializing in React,
-                TypeScript, Node.js, and cloud deployment. Skilled at designing scalable web apps and collaborating in
-                agile teams.</p>
-        </section>
+            <section>
+                <h2>Summary</h2>
+                <p>Software Engineer with 5+ years of experience in full-stack web development. Skilled in React,
+                    TypeScript, Node.js, and cloud infrastructure. Passionate about building scalable apps and
+                    delivering clean code.</p>
+            </section>
 
-        <section>
-            <h2>Experience</h2>
+            <section>
+                <h2>Experience</h2>
+                <div class="item">
+                    <h3>Full Stack Developer – Company A</h3>
+                    <p class="meta">Jan 2021 – Present | Remote</p>
+                    <ul>
+                        <li>Developed and maintained SaaS applications using React, TypeScript, and Node.js.</li>
+                        <li>Implemented REST APIs and optimized database queries.</li>
+                        <li>Improved performance by 30% through refactoring and caching strategies.</li>
+                    </ul>
+                </div>
 
-            <div class="job">
-                <h3>Full Stack Developer – Company A</h3>
-                <p><em>Jan 2021 – Present | Remote</em></p>
-                <ul>
-                    <li>Developed and maintained web applications using React, TypeScript, and Node.js.</li>
-                    <li>Designed REST APIs and integrated third-party services.</li>
-                    <li>Improved application performance by 30% through code optimization.</li>
-                </ul>
-            </div>
+                <div class="item">
+                    <h3>Frontend Developer – Company B</h3>
+                    <p class="meta">Jun 2018 – Dec 2020 | Manila, Philippines</p>
+                    <ul>
+                        <li>Created responsive UI components with React, TailwindCSS, and JavaScript.</li>
+                        <li>Translated Figma designs into production-ready interfaces.</li>
+                        <li>Enhanced accessibility and cross-browser compatibility.</li>
+                    </ul>
+                </div>
+            </section>
 
-            <div class="job">
-                <h3>Frontend Developer – Company B</h3>
-                <p><em>Jun 2018 – Dec 2020 | Manila, Philippines</em></p>
-                <ul>
-                    <li>Built responsive UI components with React, TailwindCSS, and JavaScript.</li>
-                    <li>Collaborated with designers to translate Figma mockups into production-ready interfaces.</li>
-                    <li>Enhanced accessibility compliance (WCAG 2.1) across multiple projects.</li>
-                </ul>
-            </div>
-        </section>
+            <section>
+                <h2>Education</h2>
+                <div class="item">
+                    <h3>B.S. in Computer Science</h3>
+                    <p class="meta">University of the Philippines • 2014 – 2018</p>
+                </div>
+            </section>
 
-        <section>
-            <h2>Education</h2>
-            <div class="edu">
-                <h3>Bachelor of Science in Computer Science</h3>
-                <p><em>University of the Philippines – 2014 to 2018</em></p>
-            </div>
-        </section>
-
-        <section>
-            <h2>Skills</h2>
-            <div class="skills-list">
-                <ul>
-                    <li>JavaScript / TypeScript</li>
-                    <li>React / Redux</li>
-                    <li>Node.js / Express</li>
-                    <li>PHP / Laravel</li>
-                    <li>MySQL / PostgreSQL</li>
-                    <li>REST API Design</li>
-                    <li>TailwindCSS / HTML5 / CSS3</li>
-                    <li>AWS / Git / CI-CD</li>
-                </ul>
-            </div>
-        </section>
+            <section>
+                <h2>Skills</h2>
+                <div class="skills-list">
+                    <span>JavaScript</span>
+                    <span>TypeScript</span>
+                    <span>React</span>
+                    <span>Redux</span>
+                    <span>Node.js</span>
+                    <span>Express</span>
+                    <span>PHP / Laravel</span>
+                    <span>MySQL</span>
+                    <span>REST APIs</span>
+                    <span>AWS</span>
+                    <span>CI/CD</span>
+                </div>
+            </section>
+        </main>
     </body>
 
 </html>
